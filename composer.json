@@ -1,0 +1,42 @@
+{
+    "name": "jaber/custom-auth",
+    "description": "This is a custom auth package from Jaber",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hossain Mohammad Shahidullah Jaber",
+            "email": "mdsjaber@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "version": "1.0.0",
+    "require": {
+        "php": "^8.0.2",
+        "illuminate/contracts": "^9.21"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0",
+        "phpunit/phpunit": "^9.5.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jaber\\CustomAuth\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jaber\\CustomAuth\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jaber\\CustomAuth\\Providers\\CustomAuthServiceProvider"
+            ]
+        }
+    }
+}
